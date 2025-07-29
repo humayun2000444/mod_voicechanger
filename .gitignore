@@ -1,0 +1,11 @@
+# Ignore build outputs
+build/
+*.o
+*.so
+*.a
+*.lo
+*.la
+*.class
+*.log
+*.swp
+.DS_Store
