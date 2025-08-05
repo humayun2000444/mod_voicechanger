@@ -11,6 +11,7 @@ include_directories(
     ${FREESWITCH_INCLUDE_DIRS}
     ${CMAKE_CURRENT_SOURCE_DIR}/signalsmith-stretch
     ${CMAKE_CURRENT_SOURCE_DIR}/signalsmith-stretch/dsp
+    ${CMAKE_CURRENT_SOURCE_DIR}/../linear 
 )
 
 # Compiler flags
