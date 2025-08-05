@@ -13,6 +13,7 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/src/signalsmith-stretch
     ${CMAKE_SOURCE_DIR}/src/signalsmith-stretch/plugin
     ${CMAKE_SOURCE_DIR}/src/signalsmith-stretch/dsp
+    ${CMAKE_SOURCE_DIR}/linear
 )
 # Compiler flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -std=c++11")
