@@ -9,15 +9,18 @@ set(FREESWITCH_MODULES_DIR "/usr/local/freeswitch/mod")
 # Include directories
 include_directories(
     ${FREESWITCH_INCLUDE_DIRS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/signalsmith-stretch
-    ${CMAKE_CURRENT_SOURCE_DIR}/signalsmith-stretch/dsp
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/src/signalsmith-stretch
+    ${CMAKE_SOURCE_DIR}/src/signalsmith-stretch/plugin
+    ${CMAKE_SOURCE_DIR}/src/signalsmith-stretch/dsp
 )
-
 # Compiler flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wall -std=c++11")
 
 # Source files
-set(SOURCES mod_voicechanger.cpp)
+set(SOURCES
+    src/mod_voicechanger.cpp
+)
 
 # Build target
 add_library(mod_voicechanger MODULE ${SOURCES})
